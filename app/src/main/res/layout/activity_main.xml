@@ -1,40 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/design_default_color_secondary">
+    android:background="#23101010"
+    tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/Logotipo"
-        android:layout_width="410dp"
-        android:layout_height="388dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="90dp"
-        android:src="@drawable/pinit" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/recyclerview_item" />
 
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="420dp"
-        android:text="Notas Locais"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:background="@color/black">
-    </Button>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:contentDescription="Add note"
+        android:src="@drawable/ic_baseline_add_24"
+        app:backgroundTint="#676767"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="#151515" />
 
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="550dp"
-        android:text="Login"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:background="@color/black">
-    </Button>
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
