@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity(), CellClickListener {
         //Fab
         val fab = findViewById<FloatingActionButton>(R.id.fab)
         fab.setOnClickListener {
-            val intent = Intent(this@MainActivity, AddNote::class.java)
+            val intent = Intent(this@MainActivity, AddNotas::class.java)
             startActivityForResult(intent, newWordActivityRequestCode)
         }
 
@@ -63,8 +63,8 @@ class MainActivity : AppCompatActivity(), CellClickListener {
 
         if(requestCode ==  newWordActivityRequestCode) {
             if (requestCode == newWordActivityRequestCode && resultCode == Activity.RESULT_OK) {
-                var titulo = data?.getStringExtra(AddNote.EXTRA_REPLY_TITLE).toString()
-                var content = data?.getStringExtra(AddNote.EXTRA_REPLY_CONTENT).toString()
+                var titulo = data?.getStringExtra(AddNotas.EXTRA_REPLY_TITLE).toString()
+                var content = data?.getStringExtra(AddNotas.EXTRA_REPLY_CONTENT).toString()
                 var note = Notas(title = titulo, content = content)
                 notasViewModel.insert(note)
                 Toast.makeText(this, "Nota guardada.", Toast.LENGTH_SHORT).show()
@@ -91,7 +91,7 @@ class MainActivity : AppCompatActivity(), CellClickListener {
         val id = data.id.toString()
         val titulo = data.title
         val conteudo = data.content
-        val intent = Intent(this, EditNote::class.java).apply {
+        val intent = Intent(this, EditNotas::class.java).apply {
             putExtra(PARAM_ID, id)
             putExtra(PARAM1_TITLE, titulo)
             putExtra(PARAM2_CONTENT, conteudo)

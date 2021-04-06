@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/update_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:fontFamily="sans-serif-light"
+        android:hint="Insere o Título"
+        android:inputType="textAutoComplete"
+        android:layout_margin="15dp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/update_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:fontFamily="sans-serif-light"
+        android:hint="Insere o Conteúdo"
+        android:inputType="textAutoComplete"
+        android:layout_margin="15dp"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Editar"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@android:color/holo_green_dark"/>
+
+    <Button
+        android:id="@+id/button_remove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Remover"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@android:color/holo_red_light" />
+
+
+</LinearLayout>
