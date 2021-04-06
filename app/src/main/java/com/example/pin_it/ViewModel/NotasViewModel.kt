@@ -33,4 +33,3 @@ class NotasViewModel(application: Application) : AndroidViewModel(application) {
         repository.updateById(title, content, id)
     }
 }
-}

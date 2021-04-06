@@ -10,7 +10,7 @@ import android.widget.Button
 import android.widget.EditText
 
 
-class EditNote : AppCompatActivity() {
+class EditNotas : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_notas)
