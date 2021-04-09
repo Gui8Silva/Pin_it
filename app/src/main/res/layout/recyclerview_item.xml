@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
-    android:background="#535353"
+    android:background="#3F51B5"
     android:onClick="CellClickListener">
 
     <TextView
@@ -25,8 +25,8 @@
         android:layout_alignLeft="@id/ViewTitle"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:textColor="@color/white"
-        android:text="Content" />
+        android:text="Content"
+        android:textColor="@color/white" />
 
 
 </RelativeLayout>
