@@ -7,7 +7,7 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 
 @Suppress("DEPRECATION")
-class Inicial : AppCompatActivity() {
+class SplashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.splashscreen)

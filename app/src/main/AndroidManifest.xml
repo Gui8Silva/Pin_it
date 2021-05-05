@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.pin_it">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    
     <application
         android:allowBackup="true"
         android:icon="@drawable/pinit"
@@ -12,7 +14,7 @@
         <activity android:name=".EditNotas"/>
         <activity android:name=".AddNotas" />
         <activity android:name=".MainActivity"/>
-        <activity android:name=".Inicial"
+        <activity android:name=".SplashScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

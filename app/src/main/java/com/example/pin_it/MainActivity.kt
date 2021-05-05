@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity(), CellClickListener {
         if (resultCode == Activity.RESULT_OK && data != null && data.action == "REMOVE") {
             var id = Integer.parseInt(data?.getStringExtra(PARAM_ID))
             notasViewModel.deleteById(id)
-            Toast.makeText(this, "Nota eliminada.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Nota eliminada", Toast.LENGTH_SHORT).show()
             return
         }
 
@@ -68,11 +68,11 @@ class MainActivity : AppCompatActivity(), CellClickListener {
                 var content = data?.getStringExtra(AddNotas.EXTRA_REPLY_CONTENT).toString()
                 var note = Notas(title = titulo, content = content)
                 notasViewModel.insert(note)
-                Toast.makeText(this, "Nota guardada.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Nota guardada", Toast.LENGTH_SHORT).show()
             } else {
                 Toast.makeText(
                     applicationContext,
-                    "Campo(s) Vazio(s): não inserido.",
+                    "Campo(s) Vazio(s): Nota não guardada",
                     Toast.LENGTH_LONG).show()
             }
         } else if (requestCode == UpdateNoteActivityRequestCode) {
@@ -81,9 +81,9 @@ class MainActivity : AppCompatActivity(), CellClickListener {
                 var content = data?.getStringExtra(PARAM2_CONTENT).toString()
                 var id = Integer.parseInt(data?.getStringExtra(PARAM_ID))
                 notasViewModel.updateById(titulo, content, id)
-                Toast.makeText(applicationContext, "Nota alterada.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext, "Nota alterada", Toast.LENGTH_SHORT).show()
             } else {
-                Toast.makeText(applicationContext, "Campo(s) Vazio(s): não alterado.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext, "Campo(s) Vazio(s): Nota não alterada", Toast.LENGTH_SHORT).show()
             }
         }
     }
