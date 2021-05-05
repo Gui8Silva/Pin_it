@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Pin it</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
