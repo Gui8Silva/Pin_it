@@ -19,6 +19,6 @@ interface EndPoints {
     fun getReportById(@Path("id") id: String?): Call<Problema>
 
     @FormUrlEncoded
-    @POST("/myslim/api/user_login")
+    @POST("/myslim/api/login")
     fun login(@Field("username") username: String?, @Field("password") password: String?): Call<OutputLogin>
 }
