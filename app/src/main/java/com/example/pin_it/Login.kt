@@ -28,9 +28,9 @@ class Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        editUsernameView = findViewById(R.id.username)
-        editPasswordView = findViewById(R.id.password)
-        checkboxRemeber = findViewById(R.id.lembrar)
+        editUsernameView = findViewById(R.id.editarUsername)
+        editPasswordView = findViewById(R.id.editarPassword)
+        checkboxRemeber = findViewById(R.id.Lembrar)
 
         shared_preferences = getSharedPreferences("shared_preferences", Context.MODE_PRIVATE)
         lembrar = shared_preferences.getBoolean("lembrar", false)

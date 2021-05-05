@@ -20,7 +20,7 @@
         android:layout_marginTop="150dp"/>
 
     <EditText
-        android:id="@+id/editUsername"
+        android:id="@+id/editarUsername"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -31,7 +31,7 @@
         android:textColor="@color/black"/>
 
     <EditText
-        android:id="@+id/editPassword"
+        android:id="@+id/editarPassword"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -42,7 +42,7 @@
         android:textColor="@color/black"/>
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/Lembrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Relembrar ao entrar?"
