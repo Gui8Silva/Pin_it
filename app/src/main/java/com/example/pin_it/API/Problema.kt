@@ -4,7 +4,7 @@ package com.example.pin_it.API
         val id: Int,
         val latitude: Float,
         val longitude: Float,
-        val title: String,
+        val titulo: String,
         val descricao: String,
         val imagem: String,
         val user_id: Int
