@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pin it</string>
+    <string name="notaslocais">Notas locais</string>
+    <string name="Title">Título</string>
+    <string name="Content">Conteúdo</string>
+    <string name="Mapa">Mapa</string>
+    <string name="Addnote">Adicionar nota</string>
+    <string name="Relembrar">Relembrar?</string>
+    <string name="Editar">Editar</string>
+    <string name="Remover">Remover</string>
+    <string name="Guardar">Guardar</string>
+    <string name="notaeliminada">Nota eliminada</string>
+    <string name="notaguardada">Nota guardada</string>
+</resources>

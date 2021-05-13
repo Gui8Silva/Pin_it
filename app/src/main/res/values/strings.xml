@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">Pin it</string>
     <string name="title_activity_maps">Map</string>
+    <string name="notaslocais">Local Notes</string>
+    <string name="Title">Title</string>
+    <string name="Content">Content</string>
+    <string name="Mapa">Map</string>
+    <string name="Addnote">Add note</string>
+    <string name="Relembrar">Remember?</string>
+    <string name="Editar">Edit</string>
+    <string name="Remover">Remove</string>
+    <string name="Guardar">Save</string>
+    <string name="notaeliminada">Note deleted</string>
+    <string name="notaguardada">Note saved</string>
 </resources>

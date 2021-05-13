@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:minHeight="48dp"
         android:fontFamily="sans-serif-light"
-        android:hint="Título"
+        android:hint="@string/Title"
         android:inputType="textAutoComplete"
         android:layout_margin="15dp"
         android:textSize="18sp" />
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:minHeight="48dp"
         android:fontFamily="sans-serif-light"
-        android:hint="Conteúdo"
+        android:hint="@string/Content"
         android:inputType="textAutoComplete"
         android:layout_margin="15dp"
         android:textSize="18sp" />
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:text="Editar"
+        android:text="@string/Editar"
         android:textColor="@android:color/black"
         app:backgroundTint="@android:color/holo_blue_dark"/>
 
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:text="Remover"
+        android:text="@string/Remover"
         android:textColor="@android:color/black"
         app:backgroundTint="@android:color/holo_red_light" />
 

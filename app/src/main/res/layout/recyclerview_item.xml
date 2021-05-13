@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="Title"
+        android:text="@string/Title"
         android:textColor="@color/white"
         android:textStyle="bold" />
 
@@ -25,7 +25,7 @@
         android:layout_alignLeft="@id/ViewTitle"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:text="Content"
+        android:text="@string/Content"
         android:textColor="@color/white" />
 
 
