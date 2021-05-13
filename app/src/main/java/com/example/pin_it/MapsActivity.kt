@@ -100,12 +100,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
             return
         } else{
-            //1
             mMap.isMyLocationEnabled = true
 
-            //2
             fusedLocationClient.lastLocation.addOnSuccessListener(this) {location ->
-                //3
+                
                 if(location != null){
                     lastLocation = location
                     //Toast.makeText(this@MapsActivity, lastLocation.toString(), Toast.LENGTH_SHORT).show()
