@@ -12,4 +12,5 @@
     <string name="Guardar">Save</string>
     <string name="notaeliminada">Note deleted</string>
     <string name="notaguardada">Note saved</string>
+    <string name="username">Username:</string>
 </resources>

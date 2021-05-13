@@ -7,12 +7,62 @@
     android:layout_height="match_parent"
     android:background="@color/teal_300">
 
+    <EditText
+        android:id="@+id/editarUsername"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="42dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:hint="Username:"
+        android:textColor="@color/black"
+        android:textColorHint="#BEBEBE" />
+
+    <CheckBox
+        android:id="@+id/Lembrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editarPassword"
+        android:layout_marginLeft="450dp"
+        android:layout_marginTop="19dp"
+        android:text="@string/Relembrar"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Lembrar"
+        android:layout_marginLeft="460dp"
+        android:layout_marginTop="12dp"
+        android:onClick="login"
+        android:text="Login"
+        android:textColor="@color/black"
+        app:backgroundTint="#FFEB3B" />
+
+    <EditText
+        android:id="@+id/editarPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editarUsername"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:hint="Password:"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="#BEBEBE" />
+
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_centerVertical="true"
+        android:layout_width="210dp"
+        android:layout_height="220dp"
+        android:layout_alignParentTop="true"
         android:layout_marginLeft="50dp"
+        android:layout_marginTop="46dp"
         app:srcCompat="@drawable/pinit"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="109dp"
@@ -20,58 +70,14 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginLeft="250dp"
-        android:layout_centerVertical="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="81dp"
         app:srcCompat="@drawable/login"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="109dp"
         tools:layout_editor_absoluteY="154dp" />
 
-    <EditText
-        android:id="@+id/editarUsername"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="400dp"
-        android:layout_marginTop="100dp"
-        android:ems="10"
-        android:hint="Username:"
-        android:textColor="@color/black"
-        android:textColorHint="#BEBEBE"
-        android:backgroundTint="@color/black" />
-
-    <EditText
-        android:id="@+id/editarPassword"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="400dp"
-        android:layout_marginTop="200dp"
-        android:ems="10"
-        android:hint="Password:"
-        android:inputType="textPersonName"
-        android:textColor="@color/black"
-        android:textColorHint="#BEBEBE"
-        android:backgroundTint="@color/black"/>
-
-    <CheckBox
-        android:id="@+id/Lembrar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Relembrar"
-        android:layout_marginLeft="500dp"
-        android:layout_marginTop="270dp"
-        android:textColor="@color/black"
-        />
-
-    <Button
-        android:id="@+id/btn_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="513dp"
-        android:layout_marginTop="330dp"
-        android:onClick="login"
-        android:text="Login"
-        android:textColor="@color/black"
-        app:backgroundTint="#FFEB3B" />
 </RelativeLayout>
